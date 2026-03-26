@@ -1,5 +1,5 @@
-# Use a lightweight Java image
-FROM openjdk:17-jdk-slim
+# Use a valid lightweight OpenJDK 17 image
+FROM eclipse-temurin:17-jdk-jammy
 
 # Copy the JAR built by Maven
 COPY target/*.jar app.jar
